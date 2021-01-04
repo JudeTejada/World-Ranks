@@ -10,7 +10,7 @@ import {
 } from "@material-ui/icons";
 
 const orderBy = (countries, value, direction) => {
-  console.log(countries);
+
   if (direction === "asc") {
     return [...countries.sort((a, b) => (a[value] > b[value] ? 1 : -1))];
   }
@@ -55,7 +55,7 @@ function CountriesTable({ countries }) {
   };
 
   const setValueAndDirection = (value) => {
-    console.log(value);
+    
     switchDirection();
     setValue(value);
   };
